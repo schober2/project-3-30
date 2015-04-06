@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  address: MyText
+  price: 1
+  sqfootage: 1
+  bed: 1
+  bath: 1
+  constructed: 1
+  forsale: false
+
+two:
+  address: MyText
+  price: 1
+  sqfootage: 1
+  bed: 1
+  bath: 1
+  constructed: 1
+  forsale: false

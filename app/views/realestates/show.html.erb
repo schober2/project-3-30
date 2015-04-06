@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+<h1>View Real Estate</h1>
+
+<p>
+  <strong>Address:</strong>
+  <%= @realestate.address %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @realestate.price %>
+</p>
+
+<p>
+  <strong>Sqfootage:</strong>
+  <%= @realestate.sqfootage %>
+</p>
+
+<p>
+  <strong>Bed:</strong>
+  <%= @realestate.bed %>
+</p>
+
+<p>
+  <strong>Bath:</strong>
+  <%= @realestate.bath %>
+</p>
+
+<p>
+  <strong>Constructed:</strong>
+  <%= @realestate.constructed %>
+</p>
+
+<p>
+  <strong>Forsale:</strong>
+  <%= @realestate.forsale %>
+</p>
+
+<% if current_user %>
+  <%= link_to 'Edit', edit_realestate_path(@realestate) %> |
+<% end %>
+<%= link_to 'Back', realestates_path %>

@@ -1,0 +1,11 @@
+#body {
+  float:left;
+  width:700px;
+  height:500px;
+}
+#nav {
+  width:150px;
+  height:550px;
+  line-height:30px;
+  float:left;
+}

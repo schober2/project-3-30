@@ -1,0 +1,45 @@
+<%= form_for(@realestate) do |f| %>
+  <% if @realestate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@realestate.errors.count, "error") %> prohibited this realestate from being saved:</h2>
+
+      <ul>
+      <% @realestate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :sqfootage %><br>
+    <%= f.number_field :sqfootage %>
+  </div>
+  <div class="field">
+    <%= f.label :bed %><br>
+    <%= f.number_field :bed %>
+  </div>
+  <div class="field">
+    <%= f.label :bath %><br>
+    <%= f.number_field :bath %>
+  </div>
+  <div class="field">
+    <%= f.label :constructed %><br>
+    <%= f.number_field :constructed %>
+  </div>
+  <div class="field">
+    <%= f.label :forsale %><br>
+    <%= f.check_box :forsale %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
